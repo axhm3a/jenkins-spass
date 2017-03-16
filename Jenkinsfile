@@ -11,7 +11,6 @@ node {
        echo  'Starting sleep'
        sleep 10
        echo  'Finished sleep'
-      }
     }
   }
   parallel branches
