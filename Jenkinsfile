@@ -8,8 +8,6 @@ node {
   def branches = [:]
   for (int i = 0; i < 5; i++) {
     branches["split${i}"] = {
-      stage "Stage parallel- #"+i
-      node('remote') {
        echo  'Starting sleep'
        sleep 10
        echo  'Finished sleep'
